@@ -56,7 +56,7 @@ The performance of the navagator was suboptimal. While it plotted a good route t
 
 ## Part 3: Jackal Simulation
 
-Lastly, the Clearpath Husky was simulated in a warehouse environment. This was originally intended to be performed with the Clearpath Jackal, however the Husky was used instead. This should not be a substantial issue, as they are both simulated with the same syntax and have equivalent kinematics.
+Lastly, the Clearpath Husky was simulated in a warehouse environment. This was originally intended to be performed with the Clearpath Jackal, however the Husky was used instead. This should not be a substantial issue, as they are both simulated with the same syntax and have similar kinematics.
 
 
 <div style="text-align: center;">
@@ -65,6 +65,8 @@ Lastly, the Clearpath Husky was simulated in a warehouse environment. This was o
 *Fig. 6: The Husky simulated Gazebo*
 
 </div>
+
+The primary differance between the simulated Husky and Turtlebot was how the robots themselves are defined. ROS2 uses `.yaml` files to define the robots themselves. The Turtlebot tutorial loads the file automatically, whereas the Clearpath nodes require the user to define the `.yaml`, as well as the robot's model number when initializing the nodes. Additionally, the simulations themselves are much more computationally intense, resulting in poor simulation performance, relative to the Turtlebots.
 
 <div style="text-align: center;">
 
