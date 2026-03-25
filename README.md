@@ -15,7 +15,7 @@ The first section served as an introduction to the ROS2 navigation stack, using 
 
 </div>
 
-TODO: write about observed behaviors.
+The color-coded costmaps can be seen near the Turtlebot. The absolute cost zones are seen in magenta, while the adjacent inscribed sones are in cyan. The purple and red zones represent free space, where the color temperature represents the proximity to the inscription threshold. Note that in Fig. 1, the costmap has become unaligned from the actual map. this may be the result of an localization error, or the result of a novel bug, which resulted in two completing transforms for the robot's current position being published.
 
 <div style="text-align: center;">
 
